@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+        background: #edf5e1;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 600;
+        text-shadow: 0px 2px 4px rgb(0, 0, 0);
+        mix-blend-mode: overlay;
+    }
+    h2 {
+        text-align: center;
+        font-weight: 600;
+    }
+    p {
+        text-align: center;
+        font-size: 20px;
+    }
+    .container {
+        border: 1px solid grey;
+        background: #f5f2d0;
+    }
+
+</style>
+<body>
+    <h1 class="mt-2">Welcome To Responsive Images Page.</h1>
+    <h2 >What is a Responsive image?</h2>
+    <p>A method for providing the browser with multiple image sources depending on display density, size of the image element in the page, or any number of other factors. Often, when people talk about responsive images, they are referring to solutions for inline images</p>
+    <h2>Why Responsive images?</h2>
+    <p> We all want our images to display at the best possible quality, with optimal file size, on different devices. Issues arise when you start to view the site on a narrow screen device.
+        and it is difficult to see the people within the first content image. An improvement would be to display a cropped version of the 
+        image which displays the important details of the image when the site is viewed on a narrow screen. A second cropped image could be displayed for a
+         medium width screen device, like a tablet. This is commonly known as the art direction problem.
+    </p>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-block">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="images/320p/1.jpeg">
+                            <source media="(max-width: 640px)" srcset="images/640p/1.jpeg">
+                            <source media="(min-width: 800px)" srcset="images/1080p/1.jpeg">
+                            <img src="images/1080p/1.jpeg" class="img-fluid" alt="Marvel Image">
+                        </picture> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-block">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="images/320p/2.jpeg">
+                            <source media="(max-width: 640px)" srcset="images/640p/2.jpeg">
+                            <source media="(min-width: 800px)" srcset="images/1080p/2.jpeg">
+                            <img src="images/1080p/2.jpeg" class="img-fluid" alt=" Thor">
+                        </picture> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-block">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="images/320p/3.jpeg">
+                            <source media="(max-width: 640px)" srcset="images/640p/3.jpeg">
+                            <source media="(min-width: 800px)" srcset="images/1080p/3.jpeg">
+                            <img src="images/1080p/3.jpeg" class="img-fluid" alt="Stark Tower">
+                        </picture> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-block">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="images/320p/4.jpeg">
+                            <source media="(max-width: 640px)" srcset="images/640p/4.jpeg">
+                            <source media="(min-width: 800px)" srcset="images/1080p/4.jpeg">
+                            <img src="images/1080p/4.jpeg" class="img-fluid" alt="Marvel Image">
+                        </picture> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-block">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="images/320p/5.jpeg">
+                            <source media="(max-width: 640px)" srcset="images/640p/5.jpeg">
+                            <source media="(min-width: 800px)" srcset="images/1080p/5.jpeg">
+                            <img src="images/1080p/5.jpeg" class="img-fluid" alt="Captain America">
+                        </picture> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-block">
+                        <picture>
+                            <source media="(max-width: 320px)" srcset="images/320p/6.jpeg">
+                            <source media="(max-width: 640px)" srcset="images/640p/6.jpeg">
+                            <source media="(min-width: 800px)" srcset="images/1080p/6.jpeg">
+                            <img src="images/1080p/6.jpeg" class="img-fluid" alt="Iron Man">
+                        </picture> 
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
